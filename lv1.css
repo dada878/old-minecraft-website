@@ -1,0 +1,70 @@
+body {
+    background-color: powderblue;
+  }
+  h1 {
+    color: blue;
+    font-family: 標楷體;
+  }
+  p {
+    color: rgb(126, 123, 123);
+    border: 2px solid powderblue;
+    padding: 3px;
+  }
+  /*a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }*/
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding:10px;
+  }
+  #t01 {
+    width: 100%;    
+    background-color: #f1f1c1;
+  }
+  #col tr:nth-child(even) {
+    background-color: #eee;
+  }
+  #col tr:nth-child(odd) {
+   background-color: #fff;
+  }
+  #col th {
+    background-color: black;
+    color: white;
+  }
+  .list ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+  
+  .list li{
+    float: left;
+  }
+  
+  .list a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  #list a:hover {
+    background-color: #111111;
+  }
+  .list a:link {
+    background-color: rgb(72, 72, 76);
+    text-decoration: none;
+  }
