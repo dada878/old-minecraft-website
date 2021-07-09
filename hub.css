@@ -1,0 +1,91 @@
+.list {
+  list-style-type:none;
+  margin: 10;
+  padding: 10;
+  overflow: hidden;
+  background-color:rgb(57, 57, 57);
+  left: 0px;
+  top: 0px;
+  list-style-position: inside;
+  position: sticky;
+  display: block;
+}
+
+.list-link {
+ display: block;
+ background-color:rgb(57, 57, 57);
+ color: seashell;
+ padding: 12px;
+ text-align: center;
+ display: inline;
+ float: left;
+ text-decoration: none
+}
+
+.list-link:hover {
+  background-color:rgb(83, 83, 83);
+
+}
+
+body {
+  background-size: 50px;
+}
+
+.news {
+  background-color: silver;
+  width: 55%;
+  text-align: center;
+  float: left;
+  padding:10px;
+}
+
+.newstext {
+  text-align:left;
+  float: right;
+}
+
+/* Style the header */
+header {
+  background-color: rgba(0, 195, 255, 0.8);
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
