@@ -11,7 +11,7 @@
   display: block;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   .list-link {
     width: 100%;
   }
