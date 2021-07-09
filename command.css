@@ -118,8 +118,8 @@ footer {
 
 @media only screen and (max-width: 800px) {
   .card {
-    width:160px;
-    height:160px;
+    width:140px;
+    height:140px;
     margin:10px;
   }
   .list-link {
@@ -128,8 +128,8 @@ footer {
   }
   .card img {
     padding:5px;
-    width:150px;
-    height:80px;
+    width:140px;
+    height:70px;
   }
   .newstext {
     text-align:center;
