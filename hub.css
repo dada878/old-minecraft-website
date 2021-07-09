@@ -1,7 +1,7 @@
 .list {
   list-style-type:none;
-  margin: 10;
-  padding: 10;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
   background-color:rgb(57, 57, 57);
   left: 0px;
@@ -11,7 +11,9 @@
   display: block;
 }
 
-
+.video {
+  width: 68%;
+}
 
 .list-link {
  display: block;
@@ -98,6 +100,14 @@ footer {
   }
   .list-link {
     width: 100%;
+    display: inline;
   }
-
+  .video {
+    width: 100%;
+  }
+  .newstext {
+    text-align:center;
+    float: none;
+  }
+  
 }
