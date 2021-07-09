@@ -11,15 +11,7 @@
   display: block;
 }
 
-@media only screen and (max-width: 800px) {
-  .news {
-    width: 100%;
-  }
-  .list-link {
-    width: 100%;
-  }
 
-}
 
 .list-link {
  display: block;
@@ -98,4 +90,14 @@ footer {
   padding: 10px;
   text-align: center;
   color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .news {
+    width: 97%;
+  }
+  .list-link {
+    width: 100%;
+  }
+
 }
