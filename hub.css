@@ -11,6 +11,15 @@
   display: block;
 }
 
+@media only screen and (max-width: 800px) {
+  .list-link {
+    width: 100%;
+  }
+  .news {
+    width: 100%;
+  }
+}
+
 .list-link {
  display: block;
  background-color:rgb(57, 57, 57);
