@@ -1,11 +1,43 @@
+/*大標題*/
+
 .title {
-  background-color: rgb(206, 206, 206);
+  background-color: silver;
   width: 98.7%;
   text-align: center;
   float: left;
   padding:10px;
 }
 
+/*指令教學選擇卡*/
+
+.card {
+  background-color: snow;
+  width:288px;
+  height:250px;
+  box-shadow:2px 2px 10px;
+  display: inline-block;
+}
+
+.card:hover {
+  outline:2px solid cornflowerblue;
+  box-shadow:2px 2px 10px rgb(15, 119, 255);
+  background-color: rgb(165, 227, 255);
+}
+
+.card img {
+  padding:5px;
+  width:280px;
+  height:170px;
+}
+
+.card h3 {
+  font-size: 30px;
+}
+
+.allcard {
+  padding:10px;
+}
+/*導航欄*/
 .list {
   list-style-type:none;
   margin: 0;
@@ -19,43 +51,7 @@
   display: block;
 }
 
-.more {
-  padding:10px;
-  background-color:rgb(219, 215, 215);
-  text-align: center;
-  height: 391px;
-}
 
-.moreul {
-  float: left;
-}
-
-.moreli {
-  border-top: 1px solid #555;
-  border-bottom: 1px solid #555;
-  text-decoration: none;
-  margin: 10;
-  padding: 10;
-  font-size: 20px;
-  display: block;
-  width: 600px;
-  text-align: left;
-  height: 32px;
-}
-
-.moreli:hover {
- background-color: rgb(197, 197, 197);
-}
-
-.more-link {
-  text-decoration: none;
-  padding: 14px;
-  color:black;
-}
-
-.video {
-  width: 68%;
-}
 
 .list-link {
  display: block;
@@ -72,24 +68,8 @@
   background-color:rgb(83, 83, 83);
 }
 
-body {
-  background-size: 50px;
-}
 
-.news {
-  background-color: silver;
-  width: 55%;
-  text-align: center;
-  float: left;
-  padding:10px;
-}
-
-.newstext {
-  text-align:left;
-  float: right;
-}
-
-/* Style the header */
+/* 布局模板 */
 header {
   background-color: rgba(0, 195, 255, 0.8);
   text-align: center;
@@ -97,16 +77,15 @@ header {
   color: white;
 }
 
-/* Create two columns/boxes that floats next to each other */
 nav {
   float: left;
   width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
+  height: 300px; 
   background: #ccc;
   padding: 20px;
 }
 
-/* Style the list inside the menu */
+
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -117,17 +96,17 @@ article {
   padding: 20px;
   width: 70%;
   background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
+  height: 300px; 
 }
 
-/* Clear floats after the columns */
+
 section::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Style the footer */
+
 footer {
   background-color: #777;
   padding: 10px;
@@ -135,16 +114,22 @@ footer {
   color: white;
 }
 
+/*響應式*/
+
 @media only screen and (max-width: 800px) {
-  .news {
-    width: 97%;
+  .card {
+    width:190px;
+    height:180px;
+    margin:10px;
   }
   .list-link {
     width: 97%;
     display: inline;
   }
-  .video {
-    width: 100%;
+  .card img {
+    padding:5px;
+    width:180px;
+    height:120px;
   }
   .newstext {
     text-align:center;
