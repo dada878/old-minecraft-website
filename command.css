@@ -118,7 +118,7 @@ footer {
 
 @media only screen and (max-width: 800px) {
   .card {
-    width:120px;
+    width:125px;
     height:130px;
     margin:10px;
   }
