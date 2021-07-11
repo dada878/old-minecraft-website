@@ -118,7 +118,7 @@ footer {
 
 @media only screen and (max-width: 800px) {
   .card {
-    width:130px;
+    width:140px;
     height:130px;
     margin:10px;
   }
@@ -128,12 +128,15 @@ footer {
   }
   .card img {
     padding:5px;
-    width:120px;
-    height:50px;
+    width:130px;
+    height:70px;
   }
   .newstext {
     text-align:center;
     float: none;
+  }
+  .title {
+    width: 95.7%;
   }
   
 }

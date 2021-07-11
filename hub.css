@@ -137,10 +137,10 @@ footer {
 
 @media only screen and (max-width: 800px) {
   .news {
-    width: 97%;
+    width: 95.5%;
   }
   .list-link {
-    width: 97%;
+    width: 95.5%;
     display: inline;
   }
   .video {
@@ -152,7 +152,10 @@ footer {
     float: none;
   }
   .moreli {
-    width: 70%;
+    width: 160%;
+  }
+  .title {
+    width: 95.7%;
   }
   
 }
