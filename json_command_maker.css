@@ -19,19 +19,6 @@ h1 {
     padding: 0%;
 }
 
-/* .form {
-    margin-left: 22%;
-    width: 50%;
-    background-color: rgba(180, 180, 180, 0.779);
-} */
-
-/* form {
-    /* background-color:#777; */
-    /* border-radius: 15px; */
-    /* color: rgb(131, 130, 130); */
-    /* margin-left: 37%;
-} */
-
 .input {
     display: inline;
     background-color: rgb(131, 130, 130);
@@ -223,6 +210,15 @@ h1 {
     color: white;
   }
   
+  #input_scores {
+    width: 40%;
+  }
+
+  #input_scores2 {
+    width: 25%;
+  }
+
+
   @media only screen and (max-width: 800px) {
     .news {
       width: 95.5%;
@@ -247,17 +243,30 @@ h1 {
     }
 
     .input_box {
-      width: 95%;
+      width: 85%;
     }
     .input_box2 {
-      width: 95%;
+      width: 85%;
     }
 
     .form {
       height: 1100px;
     }
 
-    .title {
-      font-size: 20px;
+    .title_text_cmd {
+      font-size: 35px;
     }
+
+    section {
+      padding: 10px;
+    }
+
+    #input_scores {
+      width: 35%;
+    }
+  
+    #input_scores2 {
+      width: 25%;
+    }
+  
   } 
