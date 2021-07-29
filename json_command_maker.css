@@ -252,4 +252,8 @@ h1 {
     .input_box2 {
       width: 87%;
     }
-  }
+
+    .form {
+      height: 850px;
+    }
+  } 
