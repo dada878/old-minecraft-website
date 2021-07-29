@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <script src="json_command_maker.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="json_command_maker.css">
+    <title>冰川麥塊站</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="冰川, 冰川MCC">
+    <meta name="description" content="冰川麥塊站">
+    <meta name="author" content="YT冰川">
+</head>
+<body>
+  <header>
+    <img src="title.png" width="100%">
+  </header>
+    <anv>
+      <ul class="list">
+        <li><a href="index.html" class="list-link" title="網站首頁">首頁</a></li>
+        <li><a href="command.html" class="list-link" title="想學指令?">指令教學</a></li>
+        <li><a href="command_maker.html" class="list-link" title="幫你快速完成複雜指令">指令生成器</a></li>
+        <li><a href="a" class="list-link" title="用模組添加遊戲的樂趣吧">自製模組載點</a></li>
+      </ul>
+    </anv>
+    <section>
+        <div class="form">
+            <h1 style="text-align:center;">Json訊息指令(titleraw/tellraw)</h1>
+            <div class="command">
+              <p style="font-size: 20px; margin: 10px; font-weight: bold;">預覽:</p>
+              <p class="cmd_text" id="cmd_text2" >指令預覽處</p>
+            </div>
+            <br>
+            <div class="command">
+              <p style="font-size: 20px; margin: 10px; font-weight: bold;">指令:</p>
+              <p class="cmd_text" id="cmd_text" >{"rawtext":[]}</p>
+            </div>
+            <form class="sign_up" method="get">
+                <div class="input_box" style="float: left;">
+                <h2 class="sign_text">添加文字(支援\n和§): </h2>
+                <input class="input" type="text" id="input_text" style="width: 70%;">
+                <strong><input type="button" value="添加" class="buttom" onclick="TextButton()"></strong>
+                </div>
+                <div class="input_box2" style="float: left;">
+                  <h2 class="sign_text">添加記分板(目標實體,記分板): </h2>
+                  <input class="input" type="text" id="input_scores" style="width: 40%;">
+                  <input class="input" type="text" id="input_scores2" style="width: 25%;">
+                  <strong><input type="button" value="添加" class="buttom" onclick="ScoresButton()"></strong>
+                </div>
+                <div class="input_box" style="float:left;">
+                  <h2 class="sign_text">添加實體名: </h2>
+                  <input class="input" type="text" id="input_name" style="width: 70%;">
+                  <strong><input type="button" value="添加" class="buttom" onclick="NameButton()"></strong>
+                </div>
+                <div class="input_box" style="float:left;">
+                  <h2 class="sign_text">動作: </h2>
+                  <br>
+                  <strong><input type="button" value="刪除上個" class="buttom" onclick="back()" style="width: 31%;"></strong>
+                  <strong><input type="button" value="刪除全部" class="buttom" onclick="allded()" style="width: 31%;"></strong>
+                  <strong><input type="button" value="一鍵複製" class="buttom" onclick="copyText('cmd_text')" style="width: 31%;"></strong>
+                </div>
+                  <br>
+                  <br>
+                  <br>
+                  <span class="br"></span>
+            </form>    
+            <br>
+            <br>
+        </div>
+    </section>
+    <footer>
+        <p>©此網站由Youtuber冰川MCC建立</p>
+    </footer>
+</body>
+</html>

@@ -30,6 +30,11 @@
   height:170px;
 }
 
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
 .card h3 {
   font-size: 30px;
 }
