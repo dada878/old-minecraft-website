@@ -104,7 +104,7 @@ h1 {
     left: 0px;
     top: 0px;
     list-style-position: inside;
-    position: sticky;
+    /* position: sticky; */
     display: block;
   }
   
@@ -218,6 +218,10 @@ h1 {
     width: 25%;
   }
 
+  #cmd_text2 {
+    overflow:auto;
+    width:93%;
+  }
 
   @media only screen and (max-width: 800px) {
     .news {
@@ -250,7 +254,7 @@ h1 {
     }
 
     .form {
-      height: 1100px;
+      height: 900px;
     }
 
     .title_text_cmd {
@@ -267,6 +271,9 @@ h1 {
   
     #input_scores2 {
       width: 25%;
+    }
+    #cmd_text {
+      font-size: 15px;
     }
   
   } 

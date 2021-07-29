@@ -9,13 +9,9 @@ function isMobile() {
   
 }
 
-if(isMobile()){
-    br = document.getElementById("br");
-    br.innerHTML = ("<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>")
-}
-
-// else{
-    
+// if(isMobile()){
+//     br = document.getElementById("br");
+//     br.innerHTML = ("<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>")
 // }
 
 function NameButton() {
@@ -31,9 +27,9 @@ function ScoresButton() {
     element = document.getElementById("input_scores");
     element2 = document.getElementById("input_scores2");
     text = element.value;
+    text2 = element2.value;
     element.value = "";
     element2.value = "";
-    text2 = element2.value;
     output_text = '{"score":{"name":"' + text +'","objective":"'+ text2 + '"}}';
     cmd_text.push("878")
     show(output_text)
