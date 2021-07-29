@@ -38,7 +38,7 @@
   padding: 10;
   font-size: 20px;
   display: block;
-  width: 600px;
+  width: 598px;
   text-align: left;
   height: 32px;
 }
@@ -78,7 +78,7 @@ body {
 
 .news {
   background-color: silver;
-  width: 55%;
+  width: 54%;
   text-align: center;
   float: left;
   padding:10px;
@@ -155,7 +155,7 @@ footer {
     width: 105%;
   }
   .title {
-    width: 95.7%;
+    width: 94%;
   }
   
 }
