@@ -256,4 +256,8 @@ h1 {
     .form {
       height: 1000px;
     }
+
+    .title {
+      font-size: 20px;
+    }
   } 
