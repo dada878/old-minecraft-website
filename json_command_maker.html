@@ -17,9 +17,9 @@
     <anv>
       <ul class="list">
         <li><a href="index.html" class="list-link" title="網站首頁">首頁</a></li>
-        <li><a href="command.html" class="list-link" title="想學指令?">指令教學</a></li>
+        <li><a href="error.html" class="list-link" title="想學指令?">指令教學</a></li>
         <li><a href="command_maker.html" class="list-link" title="幫你快速完成複雜指令">指令生成器</a></li>
-        <li><a href="a" class="list-link" title="用模組添加遊戲的樂趣吧">自製模組載點</a></li>
+        <li><a href="error.html" class="list-link" title="用模組添加遊戲的樂趣吧">自製模組載點</a></li>
       </ul>
     </anv>
     <section>
@@ -38,7 +38,7 @@
             <form class="sign_up" method="get">
                 <div class="input_box" style="float: left;">
                 <h2 class="sign_text">添加文字(支援\n和§): </h2>
-                <input class="input" type="text" id="input_text" style="width: 70%;">
+                <input class="input" type="text" id="input_text">
                 <strong><input type="button" value="添加" class="buttom" onclick="TextButton()"></strong>
                 </div>
                 <div class="input_box2" style="float: left;">
@@ -49,7 +49,7 @@
                 </div>
                 <div class="input_box" style="float:left;">
                   <h2 class="sign_text">添加實體名: </h2>
-                  <input class="input" type="text" id="input_name" style="width: 70%;">
+                  <input class="input" type="text" id="input_name">
                   <strong><input type="button" value="添加" class="buttom" onclick="NameButton()"></strong>
                 </div>
                 <div class="input_box" style="float:left;">
@@ -58,6 +58,16 @@
                   <strong><input type="button" value="刪除上個" class="buttom" onclick="back()" style="width: 31%;"></strong>
                   <strong><input type="button" value="刪除全部" class="buttom" onclick="allded()" style="width: 31%;"></strong>
                   <strong><input type="button" value="一鍵複製" class="buttom" onclick="copyText('cmd_text')" style="width: 31%;"></strong>
+                </div>
+                <div class="input_box" style="float:left;" id="settingg">
+                  <h2 class="sign_text">設定: </h2>
+                  <br>
+                  <select id="setting" onchange="titleraw()">
+                    <option>未選擇</option>
+                    <option value="set1">titleraw actionbar</option>
+                    <option value="set2">tellraw @a</option>
+                    <option value="set3">tellraw @p</option>
+                </select>
                 </div>
                   <br>
                   <br>

@@ -38,20 +38,49 @@ function ScoresButton() {
 function show(output_text) {
     var command = document.getElementById("cmd_text");
     var command2 = document.getElementById("cmd_text2");
+    var list_valu = document.getElementById("setting").value;
+
     if (output_text != "back" && output_text != "dedall" ) {
         command_text.push(output_text);
     }
     if (output_text != "dedall") {
         command2.innerHTML = ((cmd_text.toString())).replaceAll(",","").replaceAll("\\n","<br>");
-        command.innerHTML = '{"rawtext":['+command_text+']}';
+        if (list_valu == "set1") {
+            command.innerHTML = 'execute @a ~~~ titleraw @s actionbar {"rawtext":['+command_text+']}';
+        }
+        else if (list_valu == "set2") {
+            command.innerHTML = 'tellraw @a {"rawtext":['+command_text+']}';
+        }
+        else if (list_valu == "set3") {
+            command.innerHTML = 'tellraw @p {"rawtext":['+command_text+']}';
+        }
+        else {
+            command.innerHTML = '{"rawtext":['+command_text+']}';
+        }
     }
     else{
         command2.innerHTML = "指令預覽處";
-        command.innerHTML = '{"rawtext":['+command_text+']}';
+        if (list_valu == "set1") {
+            command.innerHTML = 'execute @a ~~~ titleraw @s actionbar {"rawtext":['+command_text+']}';
+        }
+        else if (list_valu == "set2") {
+            command.innerHTML = 'tellraw @a {"rawtext":['+command_text+']}';
+        }
+        else if (list_valu == "set3") {
+            command.innerHTML = 'tellraw @p {"rawtext":['+command_text+']}';
+        }
+        else {
+            command.innerHTML = '{"rawtext":['+command_text+']}';
+        }
     }
     if (cmd_text.length==0) {
         command2.innerHTML = "指令預覽處";
     }
+}
+
+function titleraw() {
+    var list_valu = document.getElementById("setting").value;
+    show("back")
 }
 
 function TextButton() {
@@ -59,6 +88,8 @@ function TextButton() {
     text = element.value;
     element.value = "";
     output_text = '{"text":"' + text +  '"}';
+
+
     cmd_text.push(text)
     show(output_text)
 }

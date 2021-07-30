@@ -84,9 +84,22 @@ body {
   padding:10px;
 }
 
+#newss {
+  background-color: silver;
+  width: 98.7%;
+  text-align: center;
+  float: left;
+  padding:10px;
+}
+
 .newstext {
   text-align:left;
   float: right;
+}
+
+.dc {
+  width:350px;
+  height:500px;
 }
 
 /* Style the header */
@@ -96,6 +109,16 @@ header {
   font-size: 35px;
   color: white;
 }
+
+.error {
+  margin: 30px;
+  font-size: 120px;
+  color:transparent;
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+
+
+
 
 /* Create two columns/boxes that floats next to each other */
 nav {
@@ -137,7 +160,10 @@ footer {
 
 @media only screen and (max-width: 800px) {
   .news {
-    width: 95.5%;
+    width: 94.5%;
+  }
+  #newss {
+    width: 94.5%;
   }
   .list-link {
     width: 95.5%;
@@ -157,5 +183,15 @@ footer {
   .title {
     width: 94%;
   }
-  
+
+  .dc {
+    width:300px;
+    height:500px;
+  }
+  .more {
+    padding:10px;
+    background-color:rgb(255, 255, 255);
+    text-align: center;
+    height: 391px;
+  }
 }
