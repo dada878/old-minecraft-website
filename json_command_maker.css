@@ -43,7 +43,7 @@ h1 {
 
 
 .buttom:hover {
-background-color: rgb(207, 205, 205);
+background-color: rgb(196, 196, 196);
 }
 
 
@@ -283,7 +283,7 @@ footer {
   }
 
   .form {
-    height: 1100px;
+    height: 1300px;
   }
 
   .title_text_cmd {
@@ -308,6 +308,7 @@ footer {
   #cmd_text2 {
     overflow:auto;
     width:93%;
+    font-size: 20px;
   }
 
   #input_text {
