@@ -250,6 +250,12 @@ footer {
   overflow:auto;
 }
 
+.dc_button {
+  width: 100px;
+  border-radius: 10px;
+  height: 100px;
+}
+
 @media only screen and (max-width: 800px) {
   .news {
     width: 95.5%;
