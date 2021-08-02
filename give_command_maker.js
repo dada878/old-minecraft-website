@@ -13,36 +13,32 @@ var nbt_data_list = [];
 //點擊偵測
 
 function cheak_box_plate() {
-    let span = document.getElementById("plate")
-    if (is_cheak_box_plate==true) {
-        is_cheak_box_plate = false;
-        span.innerHTML=('')
+    let check_box_plate = document.getElementById("box1").checked;
+    let span = document.getElementById("plate");
+    is_cheak_box_plate = check_box_plate;
+    if (is_cheak_box_plate) {
+        span.innerHTML=('<h3 class="eletext">(可放置方塊ID)</h3><input class="input" type="text" id="input_plate">')
     }
     else {
-        is_cheak_box_plate = true;
-        span.innerHTML=('<h3 class="eletext">(可放置方塊ID)</h3><input class="input" type="text" id="input_plate">')
+        span.innerHTML=('')
     }
 }
 
 function cheak_box_destroy() {
+    let check_box_plate = document.getElementById("box2").checked;
     let span = document.getElementById("destroy")
-    if (is_cheak_box_destroy==true) {
-        is_cheak_box_destroy = false;
-        span.innerHTML=('')
+    is_cheak_box_destroy = check_box_plate;
+    if (is_cheak_box_destroy) {
+        span.innerHTML=('<h3 class="eletext">(可破壞方塊ID)</h3><input class="input" type="text" id="input_destroy">')
     }
     else {
-        is_cheak_box_destroy = true;
-        span.innerHTML=('<h3 class="eletext">(可破壞方塊ID)</h3><input class="input" type="text" id="input_destroy">')
+        span.innerHTML=('')
     }
 }
 
 function cheak_box_deadkeep() {
-    if (is_cheak_box_deadkeep==true) {
-        is_cheak_box_deadkeep = false;
-    }
-    else {
-        is_cheak_box_deadkeep = true;
-    }
+    let check_box_dead_keep = document.getElementById("box3").checked;
+    is_cheak_box_deadkeep = check_box_dead_keep;
 }
 
 function lock_change() {
@@ -79,6 +75,7 @@ function click_make() {
 //字串處理
 
 function check_str() {
+    nbt_data_list = []
     //判斷防噴
     if (is_cheak_box_deadkeep == true) {
         nbt_data_list.push('"minecraft:keep_on_death":{}');        
@@ -104,7 +101,8 @@ function check_str() {
         }   
     }
     //鎖定判斷
-    if (lock_mode != "none") {
+    lock_change();
+    if (lock_mode != "nolock") { 
         nbt_data_list.push(lock_mode);
     }
     //設定&判斷物品數量
@@ -123,6 +121,7 @@ function check_str() {
         return "error1"
     }
     else {
+        console.log(nbt_data_list)
         return(true)
     }
 }

@@ -53,10 +53,10 @@
 
                 <div class="input_box" style="float: left;">
                   <h2 class="sign_text">更多設定: </h2>          
-                  <input type="checkbox" value="qwc" onclick="cheak_box_deadkeep()" class="check_box">
+                  <input type="checkbox" id="box3" value="qwc" onclick="cheak_box_deadkeep()" class="check_box">
                   <h3 class="eletext">死亡不掉落該物品</h3><br>
                   <select id="lock" onchange="lock_change()">
-                    <option value="none">不鎖定</option>
+                    <option value="nolock">不鎖定</option>
                     <option value='"minecraft:item_lock":{"mode":"lock_in_inventory"}'>鎖定在背包</option>
                     <option value='"minecraft:item_lock":{"mode":"lock_in_slot"}'>鎖定在一格物品欄裡</option>
                   </select>
