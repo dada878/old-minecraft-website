@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <script src="give_command_maker.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="give_command_maker.css">
+    <title>Give指令生成器(基岩版) - 冰川麥塊站</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="冰川, 冰川MCC">
+    <meta name="description" content="冰川麥塊站">
+    <meta name="author" content="YT冰川">
+</head>
+<body>
+  <header>
+    <img src="title.png" width="100%">
+  </header>
+    <anv>
+      <ul class="list">
+        <li><a href="index.html" class="list-link" title="網站首頁">首頁</a></li>
+        <li><a href="error.html" class="list-link" title="想學指令?">指令教學</a></li>
+        <li><a href="command_maker.html" class="list-link" title="幫你快速完成複雜指令">指令生成器</a></li>
+        <li><a href="error.html" class="list-link" title="用模組添加遊戲的樂趣吧">自製模組載點</a></li>
+      </ul>
+    </anv>
+    <section>
+        <div class="form">
+            <h1 style="text-align:center;" class="title_text_cmd">Give指令生成器</h1>
+            <br>
+            <div class="command">
+              <p style="font-size: 20px; margin: 10px; font-weight: bold;">指令:</p>
+              <p class="cmd_text" id="cmd_text" >/give</p>
+            </div>
+            <br>
+            <form class="sign_up" method="get">
+                <div class="input_box" style="float: left;">
+                <h2 class="sign_text">基本設置: </h2>
+                <h3 class="eletext">物品ID</h3>
+                <input class="input" type="text" id="input_item_id"><br>
+                <h3 class="eletext">物品數量(選填)</h3>
+                <input class="input" type="text" id="input_item_num"><br>
+                <h3 class="eletext">數據值(選填)</h3>
+                <input class="input" type="text" id="input_item_data"><br>
+                </div>
+                <div class="input_box" style="float: left;">
+                <h2 class="sign_text">放置/破壞: </h2>             
+                <input type="checkbox" id="box1" value="qwc" onclick="cheak_box_plate()" class="check_box">
+                <h3 class="eletext">可冒險放置</h3>
+                <span id="plate"></span><br>
+                <input type="checkbox" id="box2" value="qwc" onclick="cheak_box_destroy()" class="check_box">
+                <h3 class="eletext">可冒險破壞</h3>
+                <span id="destroy"></span><br>
+                </div>
+
+                <div class="input_box" style="float: left;">
+                  <h2 class="sign_text">更多設定: </h2>          
+                  <input type="checkbox" value="qwc" onclick="cheak_box_deadkeep()" class="check_box">
+                  <h3 class="eletext">死亡不掉落該物品</h3><br>
+                  <select id="lock" onchange="lock_change()">
+                    <option value="none">不鎖定</option>
+                    <option value='"minecraft:item_lock":{"mode":"lock_in_inventory"}'>鎖定在背包</option>
+                    <option value='"minecraft:item_lock":{"mode":"lock_in_slot"}'>鎖定在一格物品欄裡</option>
+                  </select>
+                  </div>
+
+
+                <div class="input_box" style="float:left;">
+                  <h2 class="sign_text">給予目標: </h2>
+                  <select id="sele" onchange="sele_change()">
+                    <option value="@s">@s 自己</option>
+                    <option value="@a">@a 所有玩家</option>
+                    <option value="@p">@p 最近玩家</option>
+                    <option value="@r">@r 隨機玩家</option>
+                </select>
+                </div>
+                <div class="input_box" style="float:left;">
+                  <h2 class="sign_text">動作: </h2>
+                  <strong><input type="button" value="生成指令" class="buttom" onclick="click_make()"></strong>
+                  <strong><input type="button" value="一鍵複製" class="buttom" onclick="copyText('cmd_text')"></strong>
+                </div>
+                  <br>
+                  <br>
+                  <br>
+            </form>    
+            <br>
+            <br>
+        </div>
+    </section>
+    <footer>
+        <p>©此網站由Youtuber冰川MCC建立</p>
+    </footer>
+</body>
+</html>

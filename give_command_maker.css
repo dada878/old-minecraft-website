@@ -1,0 +1,390 @@
+section {
+  padding: 50px;
+  background-color: rgb(221, 217, 217);
+}
+
+.sign {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.submit:hover {
+  background-color: rgb(197, 197, 197);
+}
+
+.form {
+  padding: 0%;
+  height: 1300px;
+}
+
+.check_box {
+  width: 17px;
+  height: 17px;
+}
+
+.input {
+  /* display: inline; */
+  background-color: rgb(131, 130, 130);
+  padding: 10px;
+  border-radius: 10px;
+  width: 60%;
+  margin: 10px;
+}
+
+.sign_text {
+  /* display: inline; */
+  font-size: 23px;
+}
+
+.eletext {
+  display: inline;
+  font-size: 18px;
+}
+
+.buttom {
+  display: inline;
+  width: 49.5%;
+  height: 60px;
+  background-color: rgb(221, 217, 217);
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+.buttom:hover {
+background-color: rgb(196, 196, 196);
+}
+
+
+.input_box {
+  background-color:rgba(180, 180, 180, 0.779);
+  padding: 20px;
+  border-radius: 10px;
+  width: 97%; /*19*/
+  margin:0.2%;
+}
+
+.input_box2 {
+background-color:rgba(180, 180, 180, 0.779);
+padding: 20px;
+border-radius: 10px;
+width: 19.15%;
+margin:0.2%;
+}
+
+.command {
+  background-color:rgba(180, 180, 180, 0.779);
+  padding: 6px;
+  border-radius: 10px;
+  /* width: 25.2%; */
+  /* margin:2.5%; */
+  
+}
+
+
+.cmd_text {
+  font-size: 25px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  font-family: "Trebuchet MS";
+}
+
+#input_text {
+  width: 68%;
+}
+
+#input_name {
+  width: 69%;
+}
+
+
+#input_scores {
+  width: 37%;
+}
+
+#input_scores2 {
+  width: 22%;
+}
+
+#settingg {
+  width: 10%;
+}
+
+#setting {
+  width: 99%;
+}
+
+#lock {
+  width: 15%;
+}
+
+#sele {
+  width: 15%;
+}
+
+#input_item_id {
+  width: 20%;
+}
+
+#input_item_num {
+  width: 5%;
+}
+
+#input_item_data {
+  width: 5%;
+}
+
+/*wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww*/
+
+
+
+
+.title {
+  background-color: rgb(206, 206, 206);
+  width: 98.7%;
+  text-align: center;
+  float: left;
+  padding:10px;
+}
+
+.list {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgb(57, 57, 57);
+  left: 0px;
+  top: 0px;
+  list-style-position: inside;
+  /* position: sticky; */
+  display: block;
+}
+
+.more {
+  padding:10px;
+  background-color:rgb(219, 215, 215);
+  text-align: center;
+  height: 391px;
+}
+
+.moreul {
+  float: left;
+}
+
+.moreli {
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #555;
+  text-decoration: none;
+  margin: 10;
+  padding: 10;
+  font-size: 20px;
+  display: block;
+  width: 600px;
+  text-align: left;
+  height: 32px;
+}
+
+.moreli:hover {
+  background-color: rgb(197, 197, 197);
+}
+
+.more-link {
+  text-decoration: none;
+  padding: 14px;
+  color:black;
+}
+
+.video {
+  width: 68%;
+}
+
+.list-link {
+  display: block;
+  background-color:rgb(57, 57, 57);
+  color: seashell;
+  padding: 12px;
+  text-align: center;
+  display: inline;
+  float: left;
+  text-decoration: none
+}
+
+.list-link:hover {
+  background-color:rgb(83, 83, 83);
+}
+
+body {
+  background-size: 50px;
+}
+
+select {
+  border-radius: 4px;
+  display: inline;
+  width: 55%;
+  height: 40px;
+  background-color: rgb(221, 217, 217);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.news {
+  background-color: silver;
+  width: 55%;
+  text-align: center;
+  float: left;
+  padding:10px;
+}
+
+.newstext {
+  text-align:left;
+  float: right;
+}
+
+/* Style the header */
+header {
+  background-color: rgba(0, 195, 255, 0.8);
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;}
+nav ul {
+  list-style-type: none;
+  padding: 0;}
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+#cmd_text2 {
+  overflow:auto;
+}
+
+.dc_button {
+  width: 100px;
+  border-radius: 10px;
+  height: 100px;
+}
+
+@media only screen and (max-width: 800px) {
+  .news {
+    width: 95.5%;
+  }
+  .list-link {
+    width: 95.5%;
+    display: inline;
+  }
+  .video {
+    width: 100%;
+    height: 220px;
+  }
+  .newstext {
+    text-align:center;
+    float: none;
+  }
+  .moreli {
+    width: 105%;
+  }
+  .title {
+    width: 95.7%;
+  }
+
+  .input_box {
+    width: 85%;
+    margin:1%;
+  }
+  .input_box2 {
+    width: 85%;
+    margin:1%;
+  }
+
+  .form {
+    height: 1400px;
+  }
+
+  .title_text_cmd {
+    font-size: 35px;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  #input_scores {
+    width: 35%;
+  }
+
+  #input_scores2 {
+    width: 25%;
+  }
+  #cmd_text {
+    font-size: 15px;
+  }
+
+  #cmd_text2 {
+    overflow:auto;
+    width:93%;
+    font-size: 20px;
+  }
+
+  #input_text {
+    width: 70%;
+  }
+  
+  #input_name {
+    width: 70%;
+  }
+  #settingg {
+    width: 85%;
+  }
+  #setting {
+    width: 50%;
+  }
+
+  #input_item_id {
+    width: 40%;
+  }
+  
+  #input_item_num {
+    width: 10%;
+  }
+  
+  #input_item_data {
+    width: 10%;
+  }
+
+  #lock {
+    width: 60%;
+  }
+  
+  #sele {
+    width: 60%;
+  }
+
+  .buttom {
+    width: 49%;
+  }
+} 
