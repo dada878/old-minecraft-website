@@ -36,7 +36,7 @@
 <script type="text/javascript">
     // 存储用户名到全局变量,握手成功后发送给服务器
     var uname = prompt('请输入用户名', 'user' + uuid(8, 16));
-    var ws = new WebSocket("ws://127.0.0.1:1234");
+    var ws = new WebSocket("ws://118.165.60.206:9487");
     ws.onopen = function() {
         var data = "系统消息：建立连接成功";
         listMsg(data);
