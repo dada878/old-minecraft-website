@@ -9,7 +9,25 @@
     <meta name="keywords" content="冰川, 冰川MCC">
     <meta name="description" content="冰川麥塊站">
     <meta name="author" content="YT冰川">
-</head>
+    <script>
+      let ws = new WebSocket('wss://demo.piesocket.com/v3/channel_1?api_key=VCXCEuvhGcBDP7XhiJJUDvR1e1D3eiVjgZ9VRiaV&notify_self')
+
+      ws.onopen = () => {
+          console.log('open connection')
+          ws.send("hello");
+      }
+
+      ws.onclose = () => {
+          console.log('close connection')
+      }
+
+      //接收 Server 發送的訊息
+      ws.onmessage = event => {
+          const mapData = JSON.parse(event.data);
+          console.log(event.data);
+      }
+    </script>
+  </head>
 <body>
   <header>
     <img src="title.png" width="100%">
