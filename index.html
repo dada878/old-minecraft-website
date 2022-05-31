@@ -23,7 +23,6 @@
 
       //接收 Server 發送的訊息
       ws.onmessage = event => {
-          const mapData = JSON.parse(event.data);
           console.log(event.data);
       }
     </script>
